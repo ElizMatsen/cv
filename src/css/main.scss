@@ -1,0 +1,185 @@
+@import "colors";
+@import "font";
+@import "keyframes";
+
+//Обнуление
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a {
+  display: inline-flex;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: $main_bg;
+  margin: 0;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+input:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-style: none !important;
+}
+
+////////////////////
+$maxWidthContainer: 1140px;
+.container {
+  width: $maxWidthContainer;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.wrapper__container {
+  //padding-top: 170px;
+  flex-grow: 1;
+}
+
+.footer {
+  color: $main_font_clr;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url('../assets/img/main.webp') 0 0 fixed;
+  position: relative;
+
+  &:before {
+    content: '';
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #191a1c;
+  }
+
+  .main__description {
+
+    .main__title {
+      position: relative;
+      padding-left: 20px;
+      @include font(20px, 20px, 400, normal, #9da1a5);
+
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 10px;
+        height: 2px;
+        background: #9da1a5;
+        content: '';
+        top: calc(50% - 1px);
+      }
+    }
+  }
+
+
+}
+
+.hidden{
+  display: none;
+}

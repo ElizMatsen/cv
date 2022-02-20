@@ -1,0 +1,193 @@
+//wave
+@keyframes text-rotate {
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes text-ticker {
+  0%{
+    transform: translate(0, 0);
+  }
+
+  100%{
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes move-from-top-to-bottom {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes increase {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+@keyframes move-light {
+  from {
+    transform: translateX(- 4 em) skewX(- 45 deg)
+  }
+  to {
+    transform: translateX(10em) skewX(- 45 deg)
+  }
+}
+
+@keyframes move-from-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-from-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-content {
+  0% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+@keyframes wheel-infinite-animation-left{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(
+       360deg
+    );
+  }
+}
+
+@keyframes wheel-infinite-animation-right{
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(
+        0deg
+    );
+  }
+}
+@keyframes infinite-animation {
+  0% {
+    transform: rotate(1deg);
+  }
+  10% {
+    transform: rotate(1.5deg);
+  }
+  20% {
+    transform: rotate(
+         2deg
+    );
+  }
+  30% {
+    transform: rotate(
+        3deg
+    );
+  }
+  35% {
+    transform: rotate(
+        3.5deg
+    );
+  }
+  40% {
+    transform: rotate(
+        4deg
+    );
+  }
+  45% {
+    transform: rotate(
+        4.5deg
+    );
+  }
+  50% {
+    transform: rotate(
+        5deg
+    );
+  }
+  55% {
+    transform: rotate(
+        4.5deg
+    );
+  }
+  60% {
+    transform: rotate(
+        4deg
+    );
+  }
+  65% {
+    transform: rotate(
+        3.5deg
+    );
+  }
+  70% {
+    transform: rotate(
+        3deg
+    );
+  }
+  75% {
+    transform: rotate(
+        2.5deg
+    );
+  }
+  80% {
+    transform: rotate(
+        2deg
+    );
+  }
+  90% {
+    transform: rotate(
+        1.5deg
+    );
+  }
+  100% {
+    transform: rotate(
+        1deg
+    );
+  }
+}
+
+@keyframes move-arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
