@@ -159,6 +159,12 @@ $maxWidthContainer: 1140px;
   }
 
   .main__description {
+    .main__text {
+      -webkit-text-stroke: 1px #ffffff;
+      text-transform: uppercase;
+      position: relative;
+      @include font(60px, 80px, 700, normal, transparent);
+    }
 
     .main__title {
       position: relative;
@@ -180,6 +186,3 @@ $maxWidthContainer: 1140px;
 
 }
 
-.hidden{
-  display: none;
-}

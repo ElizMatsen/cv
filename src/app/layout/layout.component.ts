@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './layout.component.html',
 })
 export class LayoutComponent implements OnInit {
-   constructor() {
+  constructor() {
   }
 
   ngOnInit(): void {
